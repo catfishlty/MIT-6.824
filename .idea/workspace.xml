@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff2bbc01-7c6e-4d23-bdfb-205e47c7a2a1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/crawler.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/kv.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/ii.go" afterPath="$PROJECT_DIR$/src/main/ii.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/wc.go" afterPath="$PROJECT_DIR$/src/main/wc.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mapreduce/common.go" afterPath="$PROJECT_DIR$/src/mapreduce/common.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mapreduce/common_map.go" afterPath="$PROJECT_DIR$/src/mapreduce/common_map.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mapreduce/common_reduce.go" afterPath="$PROJECT_DIR$/src/mapreduce/common_reduce.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mapreduce/master.go" afterPath="$PROJECT_DIR$/src/mapreduce/master.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/mapreduce/master_splitmerge.go" afterPath="$PROJECT_DIR$/src/mapreduce/master_splitmerge.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/raft/config.go" afterPath="$PROJECT_DIR$/src/raft/config.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/raft/raft.go" afterPath="$PROJECT_DIR$/src/raft/raft.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/raft/test_test.go" afterPath="$PROJECT_DIR$/src/raft/test_test.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
