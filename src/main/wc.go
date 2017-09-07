@@ -2,8 +2,11 @@ package main
 
 import (
 	"fmt"
-	"mapreduce"
+	"../mapreduce"
 	"os"
+	"strings"
+	"strconv"
+	"regexp"
 )
 
 //
@@ -15,6 +18,25 @@ import (
 //
 func mapF(filename string, contents string) []mapreduce.KeyValue {
 	// TODO: you have to write this function
+	var res []mapreduce.KeyValue
+	m := make(map[string] int)
+	reg := regexp.MustCompile("\n|\r|[ ]+|[\\-]+|\\(|\\)")
+	contents = reg.ReplaceAllString(contents," ")
+	reg = regexp.MustCompile("[^(a-zA-Z0-9 )]")
+	contents = reg.ReplaceAllString(contents,"")
+	//fmt.Println(contents)
+	s := strings.Split(contents," ")
+
+	for i := 0;i < len(s);i++ {
+		str := strings.TrimSpace(s[i])
+		m[strings.ToLower(str)]++
+	}
+	for k,v := range m{
+		val := strconv.Itoa(v)
+		res = append(res, mapreduce.KeyValue{k, val })
+	}
+	fmt.Println(res)
+	return res
 }
 
 //
@@ -23,7 +45,15 @@ func mapF(filename string, contents string) []mapreduce.KeyValue {
 // any map task.
 //
 func reduceF(key string, values []string) string {
-	// TODO: you also have to write this function
+	sum :=0
+	for _,v := range values{
+		num,err := strconv.Atoi(v)
+		if err!=nil{
+			panic(err)
+		}
+		sum+=num
+	}
+	return strconv.Itoa(sum)
 }
 
 // Can be run in 3 ways:

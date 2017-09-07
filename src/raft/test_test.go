@@ -21,7 +21,7 @@ const RaftElectionTimeout = 1000 * time.Millisecond
 
 func TestInitialElection2A(t *testing.T) {
 	servers := 3
-	cfg := make_config(t, servers, false)
+	cfg := make_config(t,servers,false)
 	defer cfg.cleanup()
 
 	fmt.Printf("Test (2A): initial election ...\n")
